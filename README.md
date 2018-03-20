@@ -4,6 +4,8 @@ Pytorch backbone codes for the papers:
 - NIPS 2017: "Learning multiple visual domains with residual adapters", https://papers.nips.cc/paper/6654-learning-multiple-visual-domains-with-residual-adapters.pdf
 - CVPR 2018: "Efficient parametrization of multi-domain deep neural networks", 
 
+Page of our associated Visual Domain Decathlon challenge for multi-domain classification: http://www.robots.ox.ac.uk/~vgg/decathlon/
+
 ## Abstract 
 
 A practical limitation of deep neural networks is their high degree of specialization to a single task and visual domain.
@@ -17,8 +19,18 @@ these universal parametrization are very effective for transfer
 learning, where they outperform traditional fine-tuning
 techniques.
 
+##### Requirements
+- Pytorch (at least version 3.0)
+- COCO API (from https://github.com/cocodataset/cocoapi)
+
+#### Training
+
+##### Launching the code
+Execute ``main_resnet_tf.py`` to launch the code. Settings can easily be changed by hardcoding them in the parameters section of the code.
+
 ## If you consider citing us
 
+For the multi domain classification challenge:
     @inproceedings{Rebuffi17,
       author       = "Rebuffi, S-A and Bilen, H. and Vedaldi, A.",
       title        = "Learning multiple visual domains with residual adapters",
@@ -26,6 +38,7 @@ techniques.
       year         = "2017",
     }
 
+For the parallel adapters:
     @inproceedings{ rebuffi-cvpr2018,
        author = { Sylvestre-Alvise Rebuffi and Hakan Bilen and Andrea Vedaldi },
        title = {Efficient parametrization of multi-domain deep neural networks},
