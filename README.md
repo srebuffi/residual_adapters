@@ -1,4 +1,4 @@
-# Parametric families of deep neural networks with residual adapters
+## Parametric families of deep neural networks with residual adapters
 
 Pytorch backbone codes for the papers:
 - NIPS 2017: "Learning multiple visual domains with residual adapters", https://papers.nips.cc/paper/6654-learning-multiple-visual-domains-with-residual-adapters.pdf
