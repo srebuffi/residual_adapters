@@ -4,7 +4,7 @@ Pytorch backbone codes for the papers:
 - NIPS 2017: "Learning multiple visual domains with residual adapters", https://papers.nips.cc/paper/6654-learning-multiple-visual-domains-with-residual-adapters.pdf
 - CVPR 2018: "Efficient parametrization of multi-domain deep neural networks", 
 
-Page of our associated Visual Domain Decathlon challenge for multi-domain classification: http://www.robots.ox.ac.uk/~vgg/decathlon/
+Page of our associated **Visual Domain Decathlon challenge** for multi-domain classification: http://www.robots.ox.ac.uk/~vgg/decathlon/
 
 ## Abstract 
 
@@ -31,17 +31,20 @@ Execute ``main_resnet_tf.py`` to launch the code. Settings can easily be changed
 ## If you consider citing us
 
 For the multi domain classification challenge:
-    @inproceedings{Rebuffi17,
-      author       = "Rebuffi, S-A and Bilen, H. and Vedaldi, A.",
-      title        = "Learning multiple visual domains with residual adapters",
-      booktitle    = "Advances in Neural Information Processing Systems",
-      year         = "2017",
-    }
-
+``
+        @inproceedings{Rebuffi17,
+          author       = "Rebuffi, S-A and Bilen, H. and Vedaldi, A.",
+          title        = "Learning multiple visual domains with residual adapters",
+          booktitle    = "Advances in Neural Information Processing Systems",
+          year         = "2017",
+        }
+``
 For the parallel adapters:
+``
     @inproceedings{ rebuffi-cvpr2018,
        author = { Sylvestre-Alvise Rebuffi and Hakan Bilen and Andrea Vedaldi },
        title = {Efficient parametrization of multi-domain deep neural networks},
        booktitle = CVPR,
        year = 2018,
     }
+``
