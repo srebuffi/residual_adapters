@@ -30,7 +30,7 @@ Execute ``main_resnet_tf.py`` to launch the code. Settings can easily be changed
 
 ## If you consider citing us
 
-For the multi domain classification challenge:
+For the Visual Domain Decathlon challenge and the series adapters:
 
 
         @inproceedings{Rebuffi17,
@@ -44,10 +44,10 @@ For the multi domain classification challenge:
 For the parallel adapters:
 
 
-    @inproceedings{ rebuffi-cvpr2018,
-       author = { Sylvestre-Alvise Rebuffi and Hakan Bilen and Andrea Vedaldi },
-       title = {Efficient parametrization of multi-domain deep neural networks},
-       booktitle = CVPR,
-       year = 2018,
-    }
+        @inproceedings{ rebuffi-cvpr2018,
+        author = { Sylvestre-Alvise Rebuffi and Hakan Bilen and Andrea Vedaldi },
+        title = {Efficient parametrization of multi-domain deep neural networks},
+        booktitle = CVPR,
+        year = 2018,
+        }
 
