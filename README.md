@@ -29,21 +29,25 @@ techniques.
 First download the data with ``download_data.sh /path/to/save/data/``. Please copy ``decathlon_mean_std.pickle`` to the data folder. 
 
 To train a dataset from scratch:
+
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_from_scratch.py --dataset cifar100 --wd3x3 1. --wd 5. --mode bn ``
 
 To train a dataset with parallel adapters from a pretrained 'off the shelf' deep network:
+
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_adapters.py --dataset cifar100 --wd1x1 1. --wd 5. --mode parallel_adapters --source /path/to/net``
    
 To train a dataset with series adapters from a pretrained deep network (with adapters in it during pretraining):
+
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_adapters.py --dataset cifar100 --wd1x1 1. --wd 5. --mode series_adapters --source /path/to/net``
 
 To train a dataset with normal finetuning from a pretrained deep network:
+
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_finetuning.py --dataset cifar100  --wd 5. --mode bn --source /path/to/net``
 
 ##### Pretrained networks
 We pretrained networks on ImageNet (with reduced resolution):
-- ResNet 26 inspired from the original ResNet from [He,16]: https://drive.google.com/open?id=16tPH7dsdV6YfA5xCeVn3dKFGegSZS8yb
-- the network with series adapters already in it:https://drive.google.com/open?id=1f1eBQY6eHm616SAt0UXxY9RldNM9XAHb
+- a ResNet 26 inspired from the original ResNet from [He,16]: https://drive.google.com/open?id=16tPH7dsdV6YfA5xCeVn3dKFGegSZS8yb
+- the same network with series adapters already in it:https://drive.google.com/open?id=1f1eBQY6eHm616SAt0UXxY9RldNM9XAHb
 
 ## If you consider citing us
 
