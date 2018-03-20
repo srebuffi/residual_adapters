@@ -31,6 +31,7 @@ Execute ``main_resnet_tf.py`` to launch the code. Settings can easily be changed
 ## If you consider citing us
 
 For the multi domain classification challenge:
+
 ``
         @inproceedings{Rebuffi17,
           author       = "Rebuffi, S-A and Bilen, H. and Vedaldi, A.",
@@ -39,7 +40,9 @@ For the multi domain classification challenge:
           year         = "2017",
         }
 ``
+
 For the parallel adapters:
+
 ``
     @inproceedings{ rebuffi-cvpr2018,
        author = { Sylvestre-Alvise Rebuffi and Hakan Bilen and Andrea Vedaldi },
