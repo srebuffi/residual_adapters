@@ -110,8 +110,7 @@ print(names)
 for id_task in range(len(num_classes)):
     element = 0
     for name, m in net.named_modules():
-        print(name)
-        if isinstance(m, nn.BatchNorm2d) and 'bns.'+str(id_task) in name and name[:-1] in names:
+        if isinstance(m, nn.BatchNorm2d): #and 'bns.'+str(id_task) in name and name[:-1] in names:
                 print(name)
                 m.weight.data = store_data[element].clone()
                 m.bias.data = store_data_bias[element].clone()
