@@ -96,9 +96,10 @@ store_data = []
 store_data_bias = []
 store_data_rm = []
 store_data_rv = []
+names = []
 for name, m in net_old.named_modules():
-    print(name)
-    if isinstance(m, nn.BatchNorm2d) and 'bns.0' in name:
+    if isinstance(m, nn.BatchNorm2d) and 'bns.' in name:
+        names.append(name)
         store_data.append(m.weight.data)
         store_data_bias.append(m.bias.data)
         store_data_rm.append(m.running_mean)
@@ -107,7 +108,8 @@ for name, m in net_old.named_modules():
 for id_task in range(len(num_classes)):
     element = 0
     for name, m in net.named_modules():
-        if isinstance(m, nn.BatchNorm2d) and 'bns.'+str(id_task) in name:
+        if isinstance(m, nn.BatchNorm2d) and 'bns.'+str(id_task) in name and name[:-1] in names:
+                print(name)
                 m.weight.data = store_data[element].clone()
                 m.bias.data = store_data_bias[element].clone()
                 m.running_var = store_data_rv[element].clone()
