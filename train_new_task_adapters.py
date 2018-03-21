@@ -97,6 +97,7 @@ store_data_bias = []
 store_data_rm = []
 store_data_rv = []
 for name, m in net_old.named_modules():
+    print(name)
     if isinstance(m, nn.BatchNorm2d) and 'bns.0' in name:
         store_data.append(m.weight.data)
         store_data_bias.append(m.bias.data)
