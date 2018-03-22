@@ -106,12 +106,16 @@ for name, m in net_old.named_modules():
         store_data_rm.append(m.running_mean)
         store_data_rv.append(m.running_var)
 
-print(len(names))
+# Special case to copy the weight for the BN layers when the target and source networks have not the same number of BNs
+import re
+condition_bn = 'noproblem'
+if len(names) != 51 and args.mode == 'series_adapters':
+    condition_bn ='bns.....conv'
+
 for id_task in range(len(num_classes)):
     element = 0
     for name, m in net.named_modules():
-        if isinstance(m, nn.BatchNorm2d) and 'bns.'+str(id_task) in name:
-                print(name)
+        if isinstance(m, nn.BatchNorm2d) and 'bns.'+str(id_task) in name and not re.search(condition_bn,name):
                 m.weight.data = store_data[element].clone()
                 m.bias.data = store_data_bias[element].clone()
                 m.running_var = store_data_rv[element].clone()
