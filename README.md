@@ -60,8 +60,8 @@ So we train on CIFAR 100 and evaluate on the eval split:
 | :------------ | :-------------: | 
 | Scratch       |     75.23     |     
 | Parallel adapters     |   80.62    |      
-| Series adapters       |     80.13      |        
-| Series adapters (off the shelf)       |     Centre      |     
+| Series adapters       |     80.17      |        
+| Series adapters (off the shelf)       |     70.97      |     
 | Normal finetuning       |     78.62      |        
 
 ## If you consider citing us
