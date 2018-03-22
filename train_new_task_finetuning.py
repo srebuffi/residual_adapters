@@ -129,13 +129,6 @@ if args.use_cuda:
     cudnn.benchmark = True
 
 
-# Freeze 3*3 convolution layers
-"""
-for name, m in net.named_modules():
-        if isinstance(m, nn.Conv2d) and (m.kernel_size[0]==3):
-            m.weight.requires_grad = False
-"""
-
 
 args.criterion = nn.CrossEntropyLoss()
 optimizer = sgd.SGD(filter(lambda p: p.requires_grad, net.parameters()), lr=args.lr, momentum=0.9, weight_decay=args.wd)
