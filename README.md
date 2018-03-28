@@ -2,7 +2,7 @@
 
 Pytorch backbone codes for the papers:
 - NIPS 2017: "Learning multiple visual domains with residual adapters", https://papers.nips.cc/paper/6654-learning-multiple-visual-domains-with-residual-adapters.pdf
-- CVPR 2018: "Efficient parametrization of multi-domain deep neural networks", 
+- CVPR 2018: "Efficient parametrization of multi-domain deep neural networks", https://arxiv.org/pdf/1803.10082.pdf 
 
 Page of our associated **Visual Domain Decathlon challenge** for multi-domain classification: http://www.robots.ox.ac.uk/~vgg/decathlon/
 
