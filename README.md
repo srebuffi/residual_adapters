@@ -40,7 +40,7 @@ To train a dataset with series adapters put on a pretrained deep network (with a
 
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_adapters.py --dataset cifar100 --wd1x1 1. --wd 5. --mode series_adapters --source /path/to/net``
 
-To train a dataset with parallel adapters put on a pretrained 'off the shelf' deep network:
+To train a dataset with series adapters put on a pretrained 'off the shelf' deep network:
 
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_adapters.py --dataset cifar100 --wd1x1 1. --wd 5. --mode series_adapters --source /path/to/net``
 
