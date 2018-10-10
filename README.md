@@ -50,7 +50,7 @@ To train a dataset with normal finetuning from a pretrained deep network:
 
 ##### Pretrained networks
 We pretrained networks on ImageNet (with reduced resolution):
-- a ResNet 26 inspired from the original ResNet from [He,16]: https://drive.google.com/open?id=16tPH7dsdV6YfA5xCeVn3dKFGegSZS8yb
+- a ResNet 26 inspired from the original ResNet from [He,16]: https://drive.google.com/open?id=1y7gz_9KfjY8O4Ue3yHE7SpwA90Ua1mbR
 - the same network with series adapters already in it:https://drive.google.com/open?id=1f1eBQY6eHm616SAt0UXxY9RldNM9XAHb
 
 ##### Results of the commands above with the pretrained networks
