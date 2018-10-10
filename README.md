@@ -59,10 +59,10 @@ So we train on CIFAR 100 and evaluate on the eval split:
 |        |     Val. Acc.     | 
 | :------------ | :-------------: | 
 | Scratch       |     75.23     |     
-| Parallel adapters     |   80.62    |      
+| Parallel adapters     |   80.61    |      
 | Series adapters       |     80.17      |        
-| Series adapters (off the shelf)       |     70.97      |     
-| Normal finetuning       |     78.62      |        
+| Series adapters (off the shelf)       |     70.72      |     
+| Normal finetuning       |     78.40      |        
 
 ## If you consider citing us
 
