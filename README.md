@@ -1,6 +1,6 @@
-## Parametric families of deep neural networks with residual adapters
+## Parametric families of deep neural networks with residual adapters [PyTorch + MatConvNet]
 
-Pytorch backbone codes for the papers:
+Backbone codes for the papers:
 - NIPS 2017: "Learning multiple visual domains with residual adapters", https://papers.nips.cc/paper/6654-learning-multiple-visual-domains-with-residual-adapters.pdf
 - CVPR 2018: "Efficient parametrization of multi-domain deep neural networks", https://arxiv.org/pdf/1803.10082.pdf 
 
@@ -22,8 +22,8 @@ techniques.
 #### Code
 
 ##### Requirements
-- Pytorch (at least version 3.0)
-- COCO API (from https://github.com/cocodataset/cocoapi)
+- PyTorch
+- or MatConvNet with MATLAB
 
 ##### Launching the code
 First download the data with ``download_data.sh /path/to/save/data/``. Please copy ``decathlon_mean_std.pickle`` to the data folder. 
