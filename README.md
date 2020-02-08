@@ -19,13 +19,13 @@ these universal parametrization are very effective for transfer
 learning, where they outperform traditional fine-tuning
 techniques.
 
-#### Code
+## Code
 
-##### Requirements
+### Requirements
 - PyTorch
 - or MatConvNet with MATLAB
 
-##### Launching the code
+### Launching the code
 First download the data with ``download_data.sh /path/to/save/data/``. Please copy ``decathlon_mean_std.pickle`` to the data folder. 
 
 To train a dataset from scratch:
@@ -48,12 +48,12 @@ To train a dataset with normal finetuning from a pretrained deep network:
 
 ``CUDA_VISIBLE_DEVICES=2 python train_new_task_finetuning.py --dataset cifar100  --wd 5. --mode bn --source /path/to/net``
 
-##### Pretrained networks
+### Pretrained networks
 We pretrained networks on ImageNet (with reduced resolution):
 - a ResNet 26 inspired from the original ResNet from [He,16]: https://drive.google.com/open?id=1y7gz_9KfjY8O4Ue3yHE7SpwA90Ua1mbR
 - the same network with series adapters already in it:https://drive.google.com/open?id=1f1eBQY6eHm616SAt0UXxY9RldNM9XAHb
 
-##### Results of the commands above with the pretrained networks
+### Results of the commands above with the pretrained networks
 So we train on CIFAR 100 and evaluate on the eval split:
 
 |        |     Val. Acc.     | 
