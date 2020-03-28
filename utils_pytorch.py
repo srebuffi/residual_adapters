@@ -1,3 +1,8 @@
+# imdbfolder_coco.py
+# created by Sylvestre-Alvise Rebuffi [srebuffi@robots.ox.ac.uk]
+# Copyright © The University of Oxford, 2020
+# This code is made available under the Apache v2.0 licence, see LICENSE.txt for details
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
